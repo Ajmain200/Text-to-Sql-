@@ -16,11 +16,11 @@ LLM_MODEL = "qwen2.5:3b"
 @st.cache_resource
 def get_connection():
     return psycopg2.connect(
-        dbname="postgres1",
-        user="postgres",
-        password="147585",
+        dbname="",
+        user="",
+        password="",
         host="localhost",
-        port=5432
+        port=
     )
 
 
@@ -147,3 +147,4 @@ if st.button("Generate SQL"):
         st.code(sql, language="sql")
     else:
         st.warning("Please enter a question.")
+
